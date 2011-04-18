@@ -1,0 +1,42 @@
+The CS61c course staff wrote the majority of this code, Frederick James Meyer and I edited the assembler to support SIMD and slti. That is to say, he edited the assembler while I caught his Python bugs and made the repo.
+
+Here's the full set of instructions and opcodes this assembler will put into machine code for you. We didn't change anything critical for the project.
+
+opcodes:
+  'disp':1,
+  'lui':2,
+  'ori':3,
+  'addi':4,
+  'andi':5,
+  'jal':6,
+  'j':7,
+  'jr':8,
+  'beq':9,
+  'bne':10,
+  'lw':11,
+  'sw':12,
+  'slti':13,
+  'simd':14,
+
+
+functs:
+  'or':0,
+  'and':1,
+  'add':2,
+  'sub':3,
+  'sllv':4,
+  'srlv':5,
+  'srav':6,
+  'slt':7,
+  '_simd_or':0,
+  '_simd_and':1,
+  '_simd_add':2,
+  '_simd_sub':3,
+  '_simd_sllv':4,
+  '_simd_srlv':5,
+  '_simd_srav':6,
+  '_simd_slt':7,
+
+
+If you want to access the SIMD, just go ahead and use funct = 14 and the corresponding funct. 
+Remember that this doesn't IMPLEMENT SIMD, this is to help you TEST your SIMD. Have fun, and if we help you catch a bug say thanks!
